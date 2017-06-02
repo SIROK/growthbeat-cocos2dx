@@ -70,10 +70,6 @@ public class GrowthPushJNI {
 		GrowthPush.getInstance().setTag(name, value);
 	}
 
-	public static void setDeviceTags() {
-		GrowthPush.getInstance().setDeviceTags();
-	}
-
 	public static Environment convertIntToEnvironment(int environment) {
 
 		switch (environment) {
@@ -96,7 +92,7 @@ public class GrowthPushJNI {
 
 	/*
 	 * callback message uudi
-	 * 
+	 *
 	 * @param uuid
 	 */
 	static native void showMessageHandler(String uuid);
